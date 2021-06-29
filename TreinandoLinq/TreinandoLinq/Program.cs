@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace TreinandoLinq
@@ -15,7 +16,7 @@ namespace TreinandoLinq
             // Definir a consulta - query expression
             // Pegar todos os numeros pares e multiplica-los por 10
             var result = numers.Where(x => x % 2 == 0).Select(x => x *10);
-
+            //IEnumerable<int> result2 = numers.Where(x => x % 2 == 0).Select(x => x * 10);
 
             //Execute de query 
             foreach (int x in result)
@@ -24,11 +25,6 @@ namespace TreinandoLinq
             }
 
 
-
-
-
-
-            Console.WriteLine("Hello World!");
         }
     }
 }
